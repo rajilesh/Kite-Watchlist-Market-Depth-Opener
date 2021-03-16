@@ -1,0 +1,17 @@
+{
+    "name": "Kite Watchlist Market Depth Opener",
+    "description": "Kite Watchlist Market Depth Opener",
+    "version": "0.1",
+    "author": "Rajilesh Panoli",
+    "manifest_version": 3,
+    "content_scripts": [{
+        "matches": ["https://kite.zerodha.com/*"],
+        "run_at": "document_end",
+        "all_frames": true,
+        "js": ["content.js"]
+    }],
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
+}
